@@ -3,16 +3,13 @@
 <h1>Wishlist</h1>
 
 <a asp-action="Create">Add Item</a>
-<ui>
-
+<u1>		
 	@foreach (var item in Model)
 	{
-		<li>
-         <a asp-action="Description">item</a>
-		</li>
-		<li>
-			<a asp-route-id="Id">Delete</a>"
-		</li>
-
+	<li>
+		@item.Description 
+		<a asp-action="delete" asp-route-id="@item.Id">delete</a>
+	</li>	
 	}
-</ui>
+</u1>
+	
