@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WishList.Models.Item>
+
+<h1>Wishlist</h1>
+
+<a asp-action="Create">Add Item</a>
+<ui>
+
+	@foreach (var item in Model)
+	{
+		<li>
+         <a asp-action="Description">item</a>
+		</li>
+		<li>
+			<a asp-route-id="Id">Delete</a>"
+		</li>
+
+	}
+</ui>
